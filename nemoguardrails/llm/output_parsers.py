@@ -27,7 +27,7 @@ def _replace_prefix(s: str, prefix: str, repl: str):
 
 def user_intent_parser(s: str):
     """Parses the user intent."""
-    return _replace_prefix(s.strip(), "User intent: ", "  ")
+    return _replace_prefix(s.strip(), "AI: User intent: ", "  ") # bartowski model output parser
 
 
 def bot_intent_parser(s: str):
